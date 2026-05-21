@@ -1,0 +1,26 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-brand-pink: #fce7f3; /* pink-100 */
+  --color-brand-pink-dark: #fbcfe8; /* pink-200 */
+  --color-brand-brown: #451a03; /* amber-900 */
+  --color-brand-yellow: #fde047; /* yellow-300 */
+  --color-brand-blue: #93c5fd; /* blue-300 */
+  --color-brand-green: #86efac; /* green-300 */
+
+  --shadow-cute: 4px 4px 0px 0px var(--color-brand-brown);
+  --shadow-cute-active: 0px 0px 0px 0px var(--color-brand-brown);
+}
+
+@layer base {
+  body {
+    @apply bg-brand-pink text-brand-brown font-sans select-none overscroll-none overflow-hidden h-screen w-screen;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    touch-action: pan-y;
+  }
+}
+
